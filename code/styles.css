@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(37, 62, 43);
+    padding: 0;   
+    padding-bottom: 180px;   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+/* header */
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 400px;
+} .header h1 {
+    background-color: rgba(0, 0, 0, 0.500);
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 10%;   
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    text-align: center;
+} .hero {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* (header and links/navigator below */
+
+.navigator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(64, 106, 68);
+    color: rgb(0, 255, 26);
+} .icon {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+} .icon img{
+    justify-content: flex-start;
+    width: 100%;
+    min-width: 100px;
+    max-width: 100px;
+    height: auto;
+} .nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px;
+    flex-wrap: wrap;
+    gap: 20px;
+} .nav a { 
+    border-radius: 5px;
+    font-size: large;
+    transition: 0.2s;   
+    color: rgb(37, 62, 43);
+    text-decoration: none;
+} .nav a:hover {
+    color: rgb(152, 255, 164);  
+    transition: 0.2s;
+} 
+
+
+.title {
+    text-shadow: 2px 2px 0 black;
+    font-size: xx-large;
+    text-align: center;
+    color: rgb(0, 255, 26);
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
+    text-shadow: 2px 2px 0 black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(64, 106, 68, 0.800);
+    color: rgb(0, 255, 26);
+    font-size: large;
+}
+
+
+/* index/home page section*/
+
+/* Description */
+.introduction {
+    text-shadow: 2px 2px 0 black;
+    display: flex;  
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-size: 140%;
+    color: rgb(0, 255, 26);
+    gap: 20px;
+} .introduction p {
+    text-align: center;
+    flex: 1 1 300px; 
+} .introduction img {
+    padding: 10px;
+    flex: 1 1 200px; 
+    width: 15%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10%;
+}
+
+/* gallery grid */
+.row {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.05);
+} .column img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    border-radius: 10%;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* destination page section */
+
+.destination{
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);;
+    text-shadow: 2px 2px 0 black;
+    font-size: large ;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 255, 26);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} .destination img {
+    border-radius: 10%;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* history page section*/
+
+.history {
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 300px);
+    gap: 8px;
+    padding: 10px;
+    padding-top: 50px;
+    background-color: rgba(255, 255, 255, 0.05);
+} .history p {
+    padding: 50px;
+    font-size: x-large;
+    text-shadow: 2px 2px 0 black;
+    color: rgb(0, 255, 26);
+} .history img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+} .par1 {
+    grid-column: span 3 / span 3;
+} .img1 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 4;
+} .par2 {
+    width: 1000px;
+    grid-column: span 5 / span 5;
+    grid-row-start: 2;
+} .par3 {
+    width: 1000px;
+    grid-column: span 5 / span 5;
+    grid-row-start: 3;
+} .par4 {
+    width: 1000px;
+    grid-column: span 5 / span 5;
+    grid-row-start: 4;
+} .par5 {
+    width: 1000px;
+    grid-column: span 5 / span 5;
+    grid-row-start: 5;
+} .img2 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 6;
+} .par6 {
+    width: 1000px;
+    grid-column: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 7;
+}
+
+/*Activities page section*/
+
+.intro {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    text-align: center;
+    text-shadow: 2px 2px 0 black;
+    color: rgb(0, 255, 26);
+    font-size: xx-large;
+} .list, .list_reverse {
+    gap: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} .list img, .list_reverse img {
+    border-radius: 10px;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+    max-width: 700px;
+} .list ul, .list_reverse ul {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    text-align: justify;
+    margin-left: 2%;
+    list-style-position: inside;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: 1;
+} .list li, .list_reverse li {
+    font-size: x-large;
+    margin-bottom: 10px;
+} .list_reverse {
+    flex-direction: row-reverse;
+    margin-right: 2%;
+}
+
+/*Plan your trip page section*/
+
+.itinerary {
+    padding-bottom: 40px;
+    font-size: x-large;
+    text-shadow: 2px 2px 0 black;
+    color: rgb(0, 255, 26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.05);
+} .itinerary table {
+    border-collapse: collapse;
+    border: 2px solid rgb(0, 255, 34);
+    background-color: rgba(0, 0, 0, 0.2);
+} .tips, .packing{
+    font-size: x-large;
+    text-shadow: 2px 2px 0 black;
+    color: rgb(0, 255, 26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.05);
+    list-style-position: inside;
+} .form form {
+    border-radius: 10px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+} .form input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 255, 26);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+    font-size: x-large;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.200);
+} .form {
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    text-shadow: 2px 2px 0 black;
+    color: rgb(0, 255, 26);
+    padding: 20px;
+} .form input::placeholder {
+    color: rgb(0, 0, 0);
+} .date, .submit {
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+    appearance: none    ;
+} .submit {
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+} .submit:hover {
+    color: rgb(0, 255, 26);
+    transition: 0.2s;
+} .button {
+    size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
